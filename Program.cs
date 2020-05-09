@@ -10,7 +10,8 @@ namespace C__Parser
         static void Main(string[] args)
         {
             string userchoice;
-            string userFile = "userfile.txt";
+            string userfilechoice;
+            string userfile = "userfile.txt";
 
             do
             {
@@ -19,9 +20,18 @@ namespace C__Parser
             } while (userchoice != "1" && userchoice != "2" && userchoice != "3");
 
             if (userchoice == "1")
-            {   
+            {
                 Console.WriteLine("Enter file name");
-                Console.ReadLine();
+                userfilechoice = Console.ReadLine();
+
+                if (userfilechoice === "userfile")
+                {
+                    Console.WriteLine("Select Option 2 to view file.");
+                }
+                else
+                {
+                    Console.WriteLine("No valid file found.");
+                }
             }
         }
     }

@@ -1,0 +1,11 @@
+C:\Users\Marvin\Desktop\C#-Parser\bin\Debug\netcoreapp3.1\C#-Parser.exe
+C:\Users\Marvin\Desktop\C#-Parser\bin\Debug\netcoreapp3.1\C#-Parser.deps.json
+C:\Users\Marvin\Desktop\C#-Parser\bin\Debug\netcoreapp3.1\C#-Parser.runtimeconfig.json
+C:\Users\Marvin\Desktop\C#-Parser\bin\Debug\netcoreapp3.1\C#-Parser.runtimeconfig.dev.json
+C:\Users\Marvin\Desktop\C#-Parser\bin\Debug\netcoreapp3.1\C#-Parser.dll
+C:\Users\Marvin\Desktop\C#-Parser\bin\Debug\netcoreapp3.1\C#-Parser.pdb
+C:\Users\Marvin\Desktop\C#-Parser\obj\Debug\netcoreapp3.1\C#-Parser.csprojAssemblyReference.cache
+C:\Users\Marvin\Desktop\C#-Parser\obj\Debug\netcoreapp3.1\C#-Parser.AssemblyInfoInputs.cache
+C:\Users\Marvin\Desktop\C#-Parser\obj\Debug\netcoreapp3.1\C#-Parser.AssemblyInfo.cs
+C:\Users\Marvin\Desktop\C#-Parser\obj\Debug\netcoreapp3.1\C#-Parser.dll
+C:\Users\Marvin\Desktop\C#-Parser\obj\Debug\netcoreapp3.1\C#-Parser.pdb

@@ -15,11 +15,11 @@ namespace C__Parser
 
             do
             {
-                Console.WriteLine("Enter: 1 to access file. 2 to view file. 3 to end program.");
+                Console.WriteLine("Enter: 1 to access file. 2 to edit file. 3 to end program.");
                 userChoice = Console.ReadLine();
 
 
-                if (userChoice == "1")
+                if (userChoice == "1" && File.Exists(userFile))
                 {
                     Console.WriteLine("Enter file name");
                     userFileChoice = Console.ReadLine();
@@ -33,17 +33,15 @@ namespace C__Parser
                         Console.WriteLine("No file found.");
                     }
                 }
-                else if (userChoice == "2" && File.Exists(userFile))
+                else if (userChoice == "2")
                 {
+                    Console.WriteLine("Enter new text:");
                     string userInput = Console.ReadLine();
 
                     File.WriteAllText("userfile.txt", userInput);
-
-
                 }
 
-            } while (userChoice != "1" && userChoice != "2" && userChoice != "3");
-
+            } while (userChoice != "3");
         }
     }
 }

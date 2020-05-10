@@ -26,7 +26,7 @@ namespace C__Parser
 
                     if (userFileChoice == "userfile")
                     {
-                        Console.WriteLine("Select Option 2 to view file.");
+                        Console.WriteLine("Select Option 2 to view and edit file.");
                     }
                     else
                     {

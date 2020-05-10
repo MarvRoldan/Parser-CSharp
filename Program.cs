@@ -17,7 +17,6 @@ namespace C__Parser
                 Console.WriteLine("Enter: 1 to access file. 2 to edit file. 3 to end program.");
                 userChoice = Console.ReadLine();
 
-
                 if (userChoice == "1" && File.Exists(userFile))
                 {
                     Console.WriteLine("Enter file name");
@@ -32,7 +31,7 @@ namespace C__Parser
                         Console.WriteLine("No file found.");
                     }
                 }
-                else if (userChoice == "2")
+                else if (userChoice == "2" && File.Exists(userFile))
                 {
                     Console.WriteLine("Enter new text:");
                     string userInput = Console.ReadLine();

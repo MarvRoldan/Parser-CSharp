@@ -9,30 +9,41 @@ namespace C__Parser
 
         static void Main(string[] args)
         {
-            string userchoice;
-            string userfilechoice;
-            string userfile = "userfile.txt";
+            string userChoice;
+            string userFileChoice;
+            string userFile = "userfile.txt";
 
             do
             {
                 Console.WriteLine("Enter: 1 to access file. 2 to view file. 3 to end program.");
-                userchoice = Console.ReadLine();
-            } while (userchoice != "1" && userchoice != "2" && userchoice != "3");
+                userChoice = Console.ReadLine();
 
-            if (userchoice == "1")
-            {
-                Console.WriteLine("Enter file name");
-                userfilechoice = Console.ReadLine();
 
-                if (userfilechoice === "userfile")
+                if (userChoice == "1")
                 {
-                    Console.WriteLine("Select Option 2 to view file.");
+                    Console.WriteLine("Enter file name");
+                    userFileChoice = Console.ReadLine();
+
+                    if (userFileChoice == "userfile")
+                    {
+                        Console.WriteLine("Select Option 2 to view file.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("No file found.");
+                    }
                 }
-                else
+                else if (userChoice == "2" && File.Exists(userFile))
                 {
-                    Console.WriteLine("No valid file found.");
+                    string userInput = Console.ReadLine();
+
+                    File.WriteAllText("userfile.txt", userInput);
+
+
                 }
-            }
+
+            } while (userChoice != "1" && userChoice != "2" && userChoice != "3");
+
         }
     }
 }
